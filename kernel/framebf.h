@@ -3,9 +3,10 @@ void framebf_init();
 void drawPixelARGB32(int x, int y, unsigned int attr);
 void drawRectARGB32(int x1, int y1, int x2, int y2, unsigned int attr, int fill);
 void drawLineARGB32(int x1, int y1, int x2, int y2, unsigned int attr);
-void drawImgARGB32(int startX, int startY, int imgWidth, int imgHeight, const unsigned long img[]);
+void drawImgARGB32(int startX, int startY, int imgWidth, int imgHeight, const unsigned long data[]);
 void clearImg(int startX, int startY, int imgWidth, int imgHeight);
-
+void wait_msec(unsigned int n);
+void set_wait_timer(int set, unsigned int msVal);
 
 #define PHYSICAL_WIDTH 1024
 #define PHYSICAL_HEIGHT 550
